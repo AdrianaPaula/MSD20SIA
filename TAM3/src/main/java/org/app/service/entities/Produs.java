@@ -7,10 +7,13 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
+@Inheritance(strategy=InheritanceType.JOINED)
 public class Produs implements Serializable{
 	@Id
 	@GeneratedValue
@@ -58,6 +61,12 @@ public class Produs implements Serializable{
 		result = prime * result + ((id_produs == null) ? 0 : id_produs.hashCode());
 		return result;
 	}
+	
+	public Produs(Integer id_produs, String denumire) {
+		super();
+		this.id_produs = id_produs;
+		this.denumire = denumire;
+	}
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -73,6 +82,10 @@ public class Produs implements Serializable{
 		} else if (!id_produs.equals(other.id_produs))
 			return false;
 		return true;
+	}
+	@Override
+	public String toString() {
+		return "Produs [id_produs=" + id_produs + ", denumire=" + denumire + ", observatii=" + observatii + "]";
 	}
 	
 	

@@ -17,6 +17,7 @@ import org.app.service.entities.Angajat;
 import org.app.service.entities.EntityBase;
 import org.app.service.entities.Product_Backlog;
 import org.app.service.entities.Produs;
+import org.app.service.entities.User_story;
 
 
 @Remote
@@ -30,7 +31,7 @@ public interface Product_BacklogDataService{
 	// READ
 	Product_Backlog getProduct_BacklogByID(Integer cod);
 	Collection<Product_Backlog> getProduct_Backlogs();
-	
+	User_story getUser_storyById(Integer id_userstory);
 	// Custom READ: custom query
 	Product_Backlog getProduct_BacklogByDenumire(String Detalii);
 	

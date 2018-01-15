@@ -17,13 +17,14 @@ import org.app.service.entities.Angajat;
 import org.app.service.entities.EntityBase;
 
 import org.app.service.entities.Produs;
+import org.app.service.entities.Task;
 
 
 @Remote
 public interface AngajatDataService{
 	// CREATE or UPDATE
 	Angajat addAngajat(Angajat AngajatToAdd);
-
+	Task getTaskById(Integer taskid);
 	// DELETE
 	String removeAngajat(Angajat AngajatToDelete);
 
@@ -36,5 +37,7 @@ public interface AngajatDataService{
 	
 	// Others
 	String getMessage();
+	
+	
 }
 

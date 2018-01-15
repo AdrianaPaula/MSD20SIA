@@ -17,6 +17,7 @@ import org.app.service.entities.EntityBase;
 
 import org.app.service.entities.Produs;
 import org.app.service.entities.Task;
+import org.app.service.entities.User_story;
 
 
 @Remote
@@ -30,7 +31,8 @@ public interface TaskDataService{
 	// READ
 	Task getTaskByID(Integer id_task);
 	Collection<Task> getTaskuri();
-	
+	// Query method on release components
+	//User_story getUser_storyById(Integer id_task);
 	// Custom READ: custom query
 	Task getTaskByNume_Task(String nume_task);
 	

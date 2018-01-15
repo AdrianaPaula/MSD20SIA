@@ -63,7 +63,7 @@ public class TestTaskDataServiceEJBArq {
 		Integer TaskToAdd = 3;
 		for (int i=1; i <= TaskToAdd; i++){
 			//service.addFeature(new Feature(100 + i, "Feature_" + (100 + i)));
-			service.addTask(new Task(null, "Feature_","zero","Task"));
+			service.addTask(new Task(null, "Feature_","zero"));
 		}
 		Collection<Task> taskuri = service.getTaskuri();
 		assertTrue("Fail to add features!", taskuri.size() == TaskToAdd);

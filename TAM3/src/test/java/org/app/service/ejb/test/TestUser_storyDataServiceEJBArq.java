@@ -9,13 +9,15 @@ import java.util.List;
 import java.util.logging.Logger;
 
 import javax.ejb.EJB;
+import javax.ejb.Local;
 
+import org.app.service.ejb.AngajatDataService;
+import org.app.service.ejb.AngajatDataServiceEJB;
 import org.app.service.ejb.ProdusDataService;
 import org.app.service.ejb.ProdusDataServiceEJB;
-import org.app.service.ejb.TaskDataService;
-import org.app.service.ejb.TaskDataServiceEJB;
 import org.app.service.ejb.User_storyDataService;
 import org.app.service.ejb.User_storyDataServiceEJB;
+import org.app.service.entities.Angajat;
 import org.app.service.entities.Produs;
 import org.app.service.entities.Task;
 import org.app.service.entities.User_story;
@@ -60,31 +62,31 @@ public class TestUser_storyDataServiceEJBArq {
 	}
 	
 	@Test
-	public void test3_User_story() {
+	public void test3_AddUser_story() {
 		logger.info("DEBUG: Junit TESTING: testAddFeature ...");
 		
 		Integer User_storyToAdd = 3;
 		for (int i=1; i <= User_storyToAdd; i++){
 			//service.addFeature(new Feature(100 + i, "Feature_" + (100 + i)));
-			service.addUser_story(new User_story(null, "Feature_","zero"));
+			service.addUser_story(new User_story(null, "Marinescu Ioana","Judetul Iasi, Strada Castanilor"));
 		}
 		Collection<User_story> user_stories = service.getUser_stories();
 		assertTrue("Fail to add features!", user_stories.size() == User_storyToAdd);
 	}
 	
 	@Test
-	public void test4_GetUser_story() {
-		logger.info("DEBUG: Junit TESTING: testGetTaskuri ...");
+	public void test4_GetAnagajati() {
+		logger.info("DEBUG: Junit TESTING: testGetFeatures ...");
 		
-		Collection<User_story> user_stories = service.getUser_stories();
-		assertTrue("Fail to read taskuri!", user_stories.size()>0);
+		Collection<User_story> user_stories= service.getUser_stories();
+		assertTrue("Fail to read features!", user_stories.size()>0);
 	}
 
 
 
 	@Test
-	public void test2_DeleteUser_stories() {
-		logger.info("DEBUG: Junit TESTING: testDeleteUser_story ...");
+	public void test2_DeleteAngajati() {
+		logger.info("DEBUG: Junit TESTING: testDeleteFeature ...");
 		
 		Collection<User_story> user_stories = service.getUser_stories();
 		for (User_story u: user_stories)

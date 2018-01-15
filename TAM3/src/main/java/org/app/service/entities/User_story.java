@@ -22,6 +22,18 @@ public class User_story implements Serializable {
 	 @ManyToOne
 	 private Product_Backlog product_backlog;
 	 
+	public Task getTask() {
+		return task;
+	}
+	public void setTask(Task task) {
+		this.task = task;
+	}
+	public Product_Backlog getProduct_backlog() {
+		return product_backlog;
+	}
+	public void setProduct_backlog(Product_Backlog product_backlog) {
+		this.product_backlog = product_backlog;
+	}
 	public Integer getId_userstory() {
 		return id_userstory;
 	}
@@ -51,6 +63,9 @@ public class User_story implements Serializable {
 		this.task = task;
 		this.product_backlog = product_backlog;
 	}
+	
+	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

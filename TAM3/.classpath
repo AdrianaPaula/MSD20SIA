@@ -25,7 +25,6 @@
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
@@ -33,5 +32,29 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/primefaces/6.1/primefaces-6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/primefaces/6.1/primefaces-6.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/afterdark/1.0.8/afterdark-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/afternoon/1.0.8/afternoon-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/afterwork/1.0.8/afterwork-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/black-tie/1.0.8/black-tie-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/blitzer/1.0.8/blitzer-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/bluesky/1.0.8/bluesky-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/bootstrap/1.0.8/bootstrap-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/casablanca/1.0.8/casablanca-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/cruze/1.0.8/cruze-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/cupertino/1.0.8/cupertino-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/dark-hive/1.0.8/dark-hive-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/dot-luv/1.0.8/dot-luv-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/eggplant/1.0.8/eggplant-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/excite-bike/1.0.8/excite-bike-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/flick/1.0.8/flick-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/glass-x/1.0.8/glass-x-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/primefaces/themes/home/1.0.8/home-1.0.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/tukaani/xz/1.2/xz-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/tukaani/xz/1.5/xz-1.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/jstl/jstl/1.2/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Pleca/.m2/repository/org/glassfish/javax.faces/2.2.15/javax.faces-2.2.15.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
